@@ -4,7 +4,7 @@ import Navbar from './Component/Navbar/Navbar';
 import { useUser } from './Context/Context';
 import FirstBack from './Component/FirstPage/FirstBack';
 import Herosection from './Component/Hero/Herosection';
-import Aboutmetwo from './Pages/Aboutmetwo';
+import AboutMe from './Pages/AboutMe/AboutMe';
 import ReactSkill from './Pages/Skills/React';
 import Node from './Pages/Skills/Node';
 import Ui from './Pages/Skills/Ui';
@@ -41,14 +41,14 @@ function App() {
             path="/"
             element={showIntro ? <FirstBack /> : <Herosection />}
           />
-          <Route path='/About' element={<Aboutmetwo/>}/>
-          <Route path='/React' element={<ReactSkill/>}/>
-          <Route path='/Node' element={<Node/>}/>
-          <Route path='/UI' element={<Ui/>}/>
-          <Route path='/DBMS' element={<Dbms/>}/>
-          <Route path='/JS' element={<JS/>}/>
-          <Route path='/Tailwind' element={<Tailwindcss/>}/>
-          
+          <Route path='/About' element={<AboutMe />} />
+          <Route path='/React' element={<ReactSkill />} />
+          <Route path='/Node' element={<Node />} />
+          <Route path='/UI' element={<Ui />} />
+          <Route path='/DBMS' element={<Dbms />} />
+          <Route path='/JS' element={<JS />} />
+          <Route path='/Tailwind' element={<Tailwindcss />} />
+
 
         </Routes>
       </BrowserRouter>
