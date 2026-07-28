@@ -1,41 +1,27 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { FaReact } from "react-icons/fa";
-import ProfileImage from "./ProfileImage";
-import Bio from "./Bio";
+import AboutLeft from "./AboutLeft";
+import AboutRight from "./AboutRight";
 
 function AboutMe() {
     return (
-        <div className="relative min-h-[90vh] w-full overflow-hidden bg-white flex justify-center px-6 md:px-12 lg:px-20 py-16">
-            {/* soft neutral blobs */}
-            <div className="pointer-events-none absolute -top-10 -left-10 w-64 h-64 rounded-full bg-slate-100/60 blur-3xl opacity-80" />
-            <div className="pointer-events-none absolute bottom-0 right-0 w-80 h-80 rounded-full bg-slate-100/60 blur-3xl opacity-80" />
-
-            {/* soft neutral outer glow */}
-            <div className="absolute inset-x-4 md:inset-x-16 lg:inset-x-32 top-24 -z-10 h-[60vh] rounded-[2.5rem] bg-slate-100/70 blur-3xl opacity-80" />
-
-            <motion.div
-                initial={{ opacity: 0, y: 25 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7 }}
-                className="relative max-w-6xl w-full bg-white/90 backdrop-blur-2xl border border-white/40 shadow-2xl rounded-3xl px-6 md:px-10 py-10 grid grid-cols-1 md:grid-cols-[1.1fr,1.6fr] gap-10 items-center"
-            >
-                {/* rotating React icon in bg */}
-                <motion.div
-                    className="hidden md:block absolute -top-10 -right-6 text-[140px] text-cyan-400/15"
-                    animate={{ rotate: 360 }}
-                    transition={{ repeat: Infinity, duration: 28, ease: "linear" }}
-                >
-                    <FaReact />
-                </motion.div>
-
-                {/* LEFT – IMAGE (floating with badge) */}
-                <ProfileImage />
-
-                {/* RIGHT – TEXT CONTENT */}
-                <Bio />
-            </motion.div>
-        </div>
+        <section className="relative min-h-screen w-full overflow-hidden bg-[#FAFAFA] flex items-center justify-center px-6 md:px-12 lg:px-20 py-20 font-sans">
+            {/* Background Gradients (Apple-inspired subtle glows) */}
+            <div className="absolute top-0 left-0 w-[40rem] h-[40rem] bg-blue-100/40 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
+            <div className="absolute bottom-0 right-0 w-[50rem] h-[50rem] bg-purple-100/40 rounded-full blur-[140px] translate-x-1/3 translate-y-1/3 pointer-events-none" />
+            {/* Container for the Two Sections */}
+            <div className="relative max-w-7xl w-full flex flex-col lg:flex-row gap-12 lg:gap-8 items-center lg:items-stretch z-10">
+                
+                {/* Left Section (Content & Details) */}
+                <div className="w-full lg:w-1/2 flex flex-col justify-center">
+                    <AboutLeft />
+                </div>
+                {/* Right Section (3D Workspace Visuals) */}
+                <div className="w-full lg:w-1/2 flex items-center justify-center relative">
+                    <AboutRight />
+                </div>
+            </div>
+        </section>
     );
 }
 

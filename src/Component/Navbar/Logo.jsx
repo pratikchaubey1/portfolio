@@ -6,7 +6,7 @@ function Logo() {
     <Link to='/'>
 
     <div>
-        <h1 className='text-4xl font-serif'>PRAB</h1>
+        <h1 className='text-4xl font-serif'>Pratik</h1>
     </div>
     </Link>
   )
