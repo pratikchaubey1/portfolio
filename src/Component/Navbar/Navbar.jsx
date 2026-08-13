@@ -44,7 +44,7 @@ function Navbar() {
 
         {/* Desktop CTA */}
         <div className="hidden md:block">
-          <Link to="/#contact">
+          <Link to="/contact">
             <button className="flex items-center gap-2 bg-gradient-to-r from-[#8B5CF6] to-[#3B82F6] text-white px-6 py-2.5 rounded-full text-[14px] font-semibold shadow-md hover:shadow-lg hover:shadow-blue-500/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300">
               Hire Me <ArrowRight className="w-4 h-4" />
             </button>

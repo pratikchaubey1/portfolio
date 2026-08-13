@@ -146,7 +146,7 @@ function Aboutmetwo() {
           <div className="flex flex-wrap items-center gap-4 pt-2">
             {/* Resume - open in new tab */}
             <a
-              href="/main.pdf"
+              href="/final.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-xs md:text-sm px-4 py-2 rounded-full bg-slate-900 text-slate-50 shadow-md hover:shadow-xl hover:-translate-y-0.5 transition-all duration-200"
@@ -166,7 +166,7 @@ function Aboutmetwo() {
                 <FaGithub />
               </a>
               <a
-                href="https://www.linkedin.com/in/pratik-chaturvedi-584270239/"
+                href="https://www.linkedin.com/in/pratik-chaturvedi-584270239"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-slate-900 hover:-translate-y-0.5 transition-all duration-150"
@@ -175,7 +175,7 @@ function Aboutmetwo() {
                 <FaLinkedin />
               </a>
               <a
-                href="https://www.instagram.com/_prabonly/"
+                href="https://instagram.com/prabonlyy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-slate-900 hover:-translate-y-0.5 transition-all duration-150"

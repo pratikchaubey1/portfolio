@@ -11,8 +11,8 @@ function Herosection() {
             
             {/* Background Gradients & Effects */}
             <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
-                {/* Noise texture overlay */}
-                <div className="absolute inset-0 opacity-[0.03] mix-blend-overlay" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E")' }}></div>
+                {/* Noise texture overlay (optimized) */}
+                <div className="absolute inset-0 opacity-[0.02] pointer-events-none" style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E")' }}></div>
                 
                 {/* Large blurred lighting circles */}
                 <div className="absolute top-[-20%] left-[-10%] w-[60%] h-[60%] bg-blue-500/10 rounded-full blur-[150px]" />
@@ -29,26 +29,21 @@ function Herosection() {
             {/* Main Content Container */}
             <div className="relative z-10 max-w-[1400px] mx-auto flex flex-col gap-6">
                 
-                {/* Top Section: Split Layout */}
-                <div className="grid grid-cols-1 xl:grid-cols-12 gap-6 items-stretch">
+                {/* Top Section: Hero & Info Cards */}
+                <div className="flex flex-col gap-6">
+                    {/* Hero Card */}
+                    <HeroCard />
                     
-                    {/* Left Column (Hero + Second Row) */}
-                    <div className="xl:col-span-7 flex flex-col gap-6">
-                        {/* Hero Card */}
-                        <HeroCard />
-                        
-                        {/* Second Row (What I Do + Tech Stack) */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 flex-1">
-                            <WhatIDoCard />
-                            <TechStackCard />
-                        </div>
+                    {/* Second Row (What I Do + Tech Stack) */}
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                        <WhatIDoCard />
+                        <TechStackCard />
                     </div>
-                    
-                    {/* Right Column (Featured Projects) */}
-                    <div className="xl:col-span-5 h-full">
-                        <FeaturedProjects />
-                    </div>
+                </div>
 
+                {/* Featured Projects Showcase (Full Width) */}
+                <div className="w-full mt-10 mb-6">
+                    <FeaturedProjects />
                 </div>
 
                 {/* Bottom Section (Statistics) */}

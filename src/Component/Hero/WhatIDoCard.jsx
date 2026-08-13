@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { Code2, MonitorSmartphone, Server, Sparkles, Paintbrush, Briefcase, ChevronRight } from "lucide-react";
 
 function WhatIDoCard() {
@@ -81,10 +82,12 @@ function WhatIDoCard() {
 
             {/* Bottom CTA */}
             <div className="mt-auto">
-                <button className="flex items-center gap-2 text-sm font-semibold text-[#4F7CFF] hover:text-[#7B61FF] transition-colors group/btn">
-                    Explore Skills 
-                    <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
-                </button>
+                <Link to="/skills">
+                    <button className="flex items-center gap-2 text-sm font-semibold text-[#4F7CFF] hover:text-[#7B61FF] transition-colors group/btn">
+                        Explore Skills 
+                        <ChevronRight className="w-4 h-4 group-hover/btn:translate-x-1 transition-transform" />
+                    </button>
+                </Link>
             </div>
 
         </motion.div>

@@ -11,7 +11,8 @@ import Ui from './Pages/Skills/Ui';
 import Dbms from './Pages/Skills/Dbms';
 import JS from './Pages/Skills/JS';
 import Tailwindcss from './Pages/Skills/Tailwindcss';
-
+import Contact from './Pages/Contact/Contact';
+import AllSkills from './Pages/Skills/AllSkills';
 
 function App() {
   const { greetings, showIntro, setShowIntro } = useUser();
@@ -48,8 +49,8 @@ function App() {
           <Route path='/DBMS' element={<Dbms />} />
           <Route path='/JS' element={<JS />} />
           <Route path='/Tailwind' element={<Tailwindcss />} />
-
-
+          <Route path='/contact' element={<Contact />} />
+          <Route path='/skills' element={<AllSkills />} />
         </Routes>
       </BrowserRouter>
     </div>

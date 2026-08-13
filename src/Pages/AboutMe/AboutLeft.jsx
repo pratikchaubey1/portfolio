@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { FaReact, FaNodeJs, FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaDownload, FaBriefcase, FaUserGraduate, FaCode, FaRocket } from "react-icons/fa";
 import { SiTailwindcss, SiJavascript, SiMongodb, SiMysql, SiExpress } from "react-icons/si";
 import { TbDeviceMobileCode } from "react-icons/tb";
@@ -111,21 +112,23 @@ function AboutLeft() {
                 transition={{ delay: 0.6 }}
                 className="flex flex-wrap items-center gap-4 mb-12"
             >
-                <button className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:-translate-y-0.5 transition-all">
+                <a href="/final.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-6 py-3 rounded-xl font-semibold shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 hover:-translate-y-0.5 transition-all">
                     <FaDownload /> Download Resume
-                </button>
-                <button className="flex items-center gap-2 bg-white text-slate-700 border border-gray-200 px-6 py-3 rounded-xl font-semibold shadow-sm hover:bg-gray-50 transition-all">
-                    Let's Talk
-                </button>
+                </a>
+                <Link to="/contact">
+                    <button className="flex items-center gap-2 bg-white text-slate-700 border border-gray-200 px-6 py-3 rounded-xl font-semibold shadow-sm hover:bg-gray-50 transition-all">
+                        Let's Talk
+                    </button>
+                </Link>
 
                 <div className="flex items-center gap-3 ml-0 md:ml-auto">
                     {[
-                        { icon: <FaGithub />, link: "#" },
-                        { icon: <FaLinkedin />, link: "#" },
-                        { icon: <FaInstagram />, link: "#" },
-                        { icon: <FaEnvelope />, link: "#" },
+                        { icon: <FaGithub />, link: "https://github.com/pratikchaubey1" },
+                        { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/pratik-chaturvedi-584270239" },
+                        { icon: <FaInstagram />, link: "https://instagram.com/prabonlyy" },
+                        { icon: <FaEnvelope />, link: "mailto:pratikup89@gmail.com" },
                     ].map((social, i) => (
-                        <a key={i} href={social.link} className="w-10 h-10 bg-white border border-gray-100 rounded-full flex items-center justify-center text-slate-500 shadow-sm hover:text-blue-600 hover:shadow-md transition-all text-lg">
+                        <a key={i} href={social.link} target="_blank" rel="noopener noreferrer" className="w-10 h-10 bg-white border border-gray-100 rounded-full flex items-center justify-center text-slate-500 shadow-sm hover:text-blue-600 hover:shadow-md transition-all text-lg">
                             {social.icon}
                         </a>
                     ))}
