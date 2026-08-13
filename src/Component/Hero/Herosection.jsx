@@ -7,7 +7,7 @@ import Statistics from "./Statistics";
 
 function Herosection() {
     return (
-        <div className="relative min-h-screen w-full bg-[#F8FAFC] text-[#111827] font-sans selection:bg-[#4F7CFF] selection:text-white overflow-hidden pt-24 pb-10 px-4 md:px-8 lg:px-12">
+        <div className="relative min-h-screen w-full bg-[#F8FAFC] text-[#111827] font-sans selection:bg-[#4F7CFF] selection:text-white overflow-hidden pt-32 md:pt-36 pb-10 px-4 md:px-8 lg:px-12">
             
             {/* Background Gradients & Effects */}
             <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">

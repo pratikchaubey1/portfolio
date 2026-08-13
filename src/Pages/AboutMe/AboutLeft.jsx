@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { FaReact, FaNodeJs, FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaDownload, FaBriefcase, FaUserGraduate, FaCode, FaRocket } from "react-icons/fa";
 import { SiTailwindcss, SiJavascript, SiMongodb, SiMysql, SiExpress } from "react-icons/si";
 import { TbDeviceMobileCode } from "react-icons/tb";
-import portrait from "../../assets/ITSMe.jpg";
+import portrait from "../../assets/ITSMe.jpeg";
 
 function AboutLeft() {
     return (
@@ -31,7 +31,7 @@ function AboutLeft() {
                         <img 
                             src={portrait} 
                             alt="Pratik - Full Stack Developer" 
-                            className="w-full h-full object-cover grayscale opacity-90 group-hover:grayscale-0 transition duration-500"
+                            className="w-full h-full object-cover opacity-90 transition duration-500"
                         />
                     </div>
                 </motion.div>

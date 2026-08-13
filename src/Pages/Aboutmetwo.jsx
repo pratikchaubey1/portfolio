@@ -1,5 +1,5 @@
 import React from "react";
-import ITSME from "../assets/ITSME.jpg";
+import ITSME from "../assets/ITSME.jpeg";
 import { motion } from "framer-motion";
 
 // social + tech icons
@@ -34,7 +34,7 @@ function Aboutmetwo() {
   ];
 
   return (
-    <div className="relative min-h-[90vh] w-full overflow-hidden bg-white flex justify-center px-6 md:px-12 lg:px-20 py-16">
+    <div className="relative min-h-[90vh] w-full  overflow-hidden bg-white flex justify-center px-6 md:px-12 lg:px-20 py-16">
       {/* soft neutral blobs */}
       <div className="pointer-events-none absolute -top-10 -left-10 w-64 h-64 rounded-full bg-slate-100/60 blur-3xl opacity-80" />
       <div className="pointer-events-none absolute bottom-0 right-0 w-80 h-80 rounded-full bg-slate-100/60 blur-3xl opacity-80" />

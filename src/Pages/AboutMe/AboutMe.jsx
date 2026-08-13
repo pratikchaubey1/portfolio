@@ -5,7 +5,7 @@ import AboutRight from "./AboutRight";
 
 function AboutMe() {
     return (
-        <section className="relative min-h-screen w-full overflow-hidden bg-[#FAFAFA] flex items-center justify-center px-6 md:px-12 lg:px-20 py-20 font-sans">
+        <section className="relative min-h-screen w-full overflow-hidden bg-[#FAFAFA] flex items-center justify-center px-6 md:px-12 lg:px-20 pt-32 md:pt-40 pb-20 font-sans">
             {/* Background Gradients (Apple-inspired subtle glows) */}
             <div className="absolute top-0 left-0 w-[40rem] h-[40rem] bg-blue-100/40 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
             <div className="absolute bottom-0 right-0 w-[50rem] h-[50rem] bg-purple-100/40 rounded-full blur-[140px] translate-x-1/3 translate-y-1/3 pointer-events-none" />

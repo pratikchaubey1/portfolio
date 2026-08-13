@@ -4,7 +4,7 @@ import { ArrowRight, Download, Building2, Star, Briefcase } from "lucide-react";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
 import { Link } from "react-router-dom";
-import portrait from "../../assets/ITSMe.jpg";
+import portrait from "../../assets/ITSME.jpeg";
 
 function HeroCard() {
     const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -197,7 +197,7 @@ function HeroCard() {
                         <img 
                             src={portrait} 
                             alt="Pratik Profile" 
-                            className="w-full h-full object-cover grayscale-[10%] group-hover:grayscale-0 transition-all duration-700" 
+                            className="w-full h-full object-cover transition-all duration-700" 
                         />
                     </div>
                 </div>
